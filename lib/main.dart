@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,51 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Field 2 Fork"),
+          // title: Text("Field 2 Fork"),
+          ),
+      body: Container(
+        child: Column(
+          children: [
+            Container(
+              alignment: Alignment.center,
+              height: 350.0,
+              child: Padding(
+                  padding: EdgeInsets.only(top: 50),
+                  child: Lottie.asset("assets/images/welcome.json")),
+            ),
+            Container(
+              margin: EdgeInsets.all(30),
+              child: Text(
+                "WELCOME",
+                style: TextStyle(fontSize: 50),
+              ),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green[
+                            400], // Set the button's background color to green
+                      ),
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
