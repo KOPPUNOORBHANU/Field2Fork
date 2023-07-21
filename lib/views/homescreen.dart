@@ -1,5 +1,8 @@
+import 'package:field_2_fork/views/consumer/consumerSignUpScreen.dart';
+import 'package:field_2_fork/views/farmer/farmerSignUpScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,30 +19,35 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Container(
         child: Column(
           children: [
-            Center(
-              child: Padding(
-                padding: EdgeInsets.only(top: 100.0),
-                child: Card(
-                  child: Column(
-                    children: [
-                      Container(
-                        child: Padding(
-                          padding: EdgeInsets.only(bottom: 10),
-                          child: SvgPicture.asset(
-                            'assets/images/farmer.svg',
-                            width: 200,
-                            height: 200,
+            GestureDetector(
+              onTap: () {
+                Get.to(() => FarmerSignUpScreen());
+              },
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 100.0),
+                  child: Card(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Padding(
+                            padding: EdgeInsets.only(bottom: 10),
+                            child: SvgPicture.asset(
+                              'assets/images/farmer.svg',
+                              width: 200,
+                              height: 200,
+                            ),
                           ),
                         ),
-                      ),
-                      Text(
-                        'Farmer',
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          'Farmer',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -47,30 +55,35 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: 10,
             ),
-            Center(
-              child: Padding(
-                padding: EdgeInsets.only(top: 50.0),
-                child: Card(
-                  child: Column(
-                    children: [
-                      Container(
-                        child: Padding(
-                          padding: EdgeInsets.only(bottom: 10),
-                          child: SvgPicture.asset(
-                            'assets/images/consumericon.svg',
-                            width: 200,
-                            height: 200,
+            GestureDetector(
+              onTap: () {
+                Get.to(() => ConsumerSignUpScreen());
+              },
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 50.0),
+                  child: Card(
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Padding(
+                            padding: EdgeInsets.only(bottom: 10),
+                            child: SvgPicture.asset(
+                              'assets/images/consumer.svg',
+                              width: 200,
+                              height: 200,
+                            ),
                           ),
                         ),
-                      ),
-                      Text(
-                        'Consumer',
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          'Consumer',
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
