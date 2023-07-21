@@ -29,7 +29,6 @@ class _ConsumerSignUpScreenState extends State<ConsumerSignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
         automaticallyImplyLeading: false,
         shadowColor: Colors.lightGreen,
@@ -130,17 +129,16 @@ class _ConsumerSignUpScreenState extends State<ConsumerSignUpScreen> {
                   Get.to(() => const ConsumerLoginScreen());
                 },
                 child: Container(
-                    // child: const Card(
-                    //     child: Padding(
-                    //         padding: EdgeInsets.all(10.0),
-                    //         child: Text("Already have an account? LogIn"))),
-                    ),
+                  child: const Card(
+                      child: Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: Text("Already have an account? LogIn"))),
+                ),
               ),
             ],
           ),
         ),
       ),
-  
     );
   }
 }

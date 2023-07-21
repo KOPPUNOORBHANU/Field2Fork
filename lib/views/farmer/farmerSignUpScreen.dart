@@ -141,7 +141,7 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                   child: Card(
                     child: Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Text("Already Have an Acoount? LogIn")),
+                        child: Text("Already Have an Account? LogIn")),
                   ),
                 ),
               ),
