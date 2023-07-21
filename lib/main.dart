@@ -1,9 +1,9 @@
+import 'package:field_2_fork/views/homeScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:field_2_fork/views/phoneAuthentication.dart';
-import 'package:field_2_fork/views/otpVerification.dart';
-import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: EntryScreen(),
+      home: const EntryScreen(),
     );
   }
 }
@@ -49,21 +49,21 @@ class _EntryScreenState extends State<EntryScreen> {
               alignment: Alignment.center,
               height: 350.0,
               child: Padding(
-                  padding: EdgeInsets.only(top: 50),
+                  padding: const EdgeInsets.only(top: 50),
                   child: Lottie.asset("assets/images/welcome.json")),
             ),
             Container(
-              margin: EdgeInsets.all(30),
-              child: Text(
+              margin: const EdgeInsets.all(30),
+              child: const Text(
                 "WELCOME",
                 style: TextStyle(fontSize: 50),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -76,7 +76,7 @@ class _EntryScreenState extends State<EntryScreen> {
                         backgroundColor: Colors.green[
                             400], // Set the button's background color to green
                       ),
-                      child: Text(
+                      child: const Text(
                         "Get Started",
                         style: TextStyle(color: Colors.white),
                       ),
