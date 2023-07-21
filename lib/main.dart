@@ -1,3 +1,4 @@
+import 'package:field_2_fork/views/homeScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -69,9 +70,9 @@ class _EntryScreenState extends State<EntryScreen> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => Phone());
+                        Get.to(() => HomeScreen());
                       },
-                      style: ElevatedButton.styleFrom(
+                      style : ElevatedButton.styleFrom(
                         backgroundColor: Colors.green[
                             400], // Set the button's background color to green
                       ),
