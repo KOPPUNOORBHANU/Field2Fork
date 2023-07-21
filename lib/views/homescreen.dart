@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],
+      // backgroundColor: Colors.green[300],
       body: Container(
         child: Column(
           children: [
@@ -33,9 +33,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Padding(
                             padding: EdgeInsets.only(bottom: 10),
                             child: SvgPicture.asset(
-                              'assets/images/farmer.svg',
-                              width: 200,
-                              height: 200,
+                              'assets/images/farmersignup.svg',
+                              width: 150,
+                              height: 180,
                             ),
                           ),
                         ),
@@ -70,8 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: EdgeInsets.only(bottom: 10),
                             child: SvgPicture.asset(
                               'assets/images/consumer.svg',
-                              width: 200,
-                              height: 200,
+                              width: 300,
+                              height: 250,
                             ),
                           ),
                         ),

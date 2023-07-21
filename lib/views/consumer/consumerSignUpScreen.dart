@@ -11,7 +11,7 @@ class _ConsumerSignUpScreenState extends State<ConsumerSignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Hello Consumer")),
+      appBar: AppBar(title: Text("Hello Famer")),
     );
   }
 }

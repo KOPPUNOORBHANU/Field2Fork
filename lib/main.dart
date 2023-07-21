@@ -70,9 +70,9 @@ class _EntryScreenState extends State<EntryScreen> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => HomeScreen());
+                        Get.to(() => Phone());
                       },
-                      style : ElevatedButton.styleFrom(
+                      style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green[
                             400], // Set the button's background color to green
                       ),
