@@ -1,5 +1,5 @@
 import 'package:field_2_fork/main.dart';
-import 'package:field_2_fork/views/homeScreen.dart';
+//import 'package:field_2_fork/views/homeScreen.dart';
 import 'package:field_2_fork/views/phoneAuthentication.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -121,7 +121,7 @@ class _MyVerifyState extends State<MyVerify> {
 
                         // Sign the user in (or link) with the credential
                         await auth.signInWithCredential(credential);
-                        Get.to(() => const HomeScreen());
+                        Get.to(() => const EntryScreen());
                       } catch (e) {
                         print("Wrong OTP");
                       }

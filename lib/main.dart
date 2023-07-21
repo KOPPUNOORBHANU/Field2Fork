@@ -63,20 +63,20 @@ class _EntryScreenState extends State<EntryScreen> {
               height: 70,
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => Phone());
+                        Get.to(() => const Phone());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green[
                             400], // Set the button's background color to green
                       ),
-                      child: Text(
+                      child: const Text(
                         "Get Started",
                         style: TextStyle(color: Colors.white),
                       ),
