@@ -1,4 +1,3 @@
-import 'package:field_2_fork/main.dart';
 import 'package:field_2_fork/views/homeScreen.dart';
 import 'package:field_2_fork/views/phoneAuthentication.dart';
 import 'package:firebase_auth/firebase_auth.dart';
