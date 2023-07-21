@@ -70,7 +70,7 @@ class _EntryScreenState extends State<EntryScreen> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.to(() => const Phone());
+                        Get.to(() => Phone());
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green[

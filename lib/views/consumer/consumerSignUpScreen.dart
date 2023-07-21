@@ -29,6 +29,7 @@ class _ConsumerSignUpScreenState extends State<ConsumerSignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         automaticallyImplyLeading: false,
         shadowColor: Colors.lightGreen,
@@ -139,6 +140,7 @@ class _ConsumerSignUpScreenState extends State<ConsumerSignUpScreen> {
           ),
         ),
       ),
+  
     );
   }
 }
