@@ -1,9 +1,13 @@
-import 'package:field_2_fork/views/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:field_2_fork/views/phoneAuthentication.dart';
+import 'package:field_2_fork/views/otpVerification.dart';
+import 'package:get/get.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -65,9 +69,11 @@ class _EntryScreenState extends State<EntryScreen> {
                 children: [
                   Expanded(
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => Phone());
+                      },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.green[
+                        backgroundColor: Colors.green[
                             400], // Set the button's background color to green
                       ),
                       child: Text(
