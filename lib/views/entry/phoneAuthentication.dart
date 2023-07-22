@@ -1,5 +1,5 @@
 // ignore: file_names
-import 'package:field_2_fork/views/otpVerification.dart';
+import 'package:field_2_fork/views/entry/otpVerification.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

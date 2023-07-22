@@ -1,10 +1,10 @@
+import 'package:field_2_fork/views/farmer/Login_and_SignUp/farmerSignUpScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'farmerForgotPassword.dart';
-import 'farmerHomeScreen.dart';
-import 'farmerSignUpScreen.dart';
+import '../FarmerHome/farmerHomeScreen.dart';
 import 'package:quickalert/quickalert.dart';
 
 class FarmerLoginScreen extends StatefulWidget {
