@@ -44,6 +44,8 @@ dependencies:
   firebase_database: ^10.2.4
   firebase_storage: ^11.2.5
   cloud_firestore: ^4.8.3
+  quickalert: ^1.0.1
+  velocity_x: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -69,7 +71,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/images/
+    - assets/icons/
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -83,11 +88,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: sans_regular
+      fonts:
+        - asset: assests/fonts/sans_regular.ttf
+
+    - family: sans_semibold
+      fonts:
+        - asset: assests/fonts/sans_semibold.ttf
+
+    - family: sans_bold
+      fonts:
+        - asset: assests/fonts/sans_bold.ttf
+       
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
