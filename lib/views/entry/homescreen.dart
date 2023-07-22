@@ -1,8 +1,9 @@
 import 'package:field_2_fork/views/consumer/consumerSignUpScreen.dart';
-import 'package:field_2_fork/views/farmer/farmerSignUpScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
+import '../farmer/Login_and_SignUp/farmerSignUpScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

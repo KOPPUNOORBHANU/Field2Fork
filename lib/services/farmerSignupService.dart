@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:field_2_fork/main.dart';
-import 'package:field_2_fork/views/farmer/farmerLoginScreen.dart';
+import 'package:field_2_fork/views/farmer/Login_and_SignUp/farmerLoginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 

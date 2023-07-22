@@ -1,9 +1,8 @@
-import 'package:field_2_fork/views/homeScreen.dart';
+import 'package:field_2_fork/views/entry/phoneAuthentication.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:field_2_fork/views/phoneAuthentication.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

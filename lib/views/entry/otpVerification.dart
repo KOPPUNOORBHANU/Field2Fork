@@ -1,5 +1,5 @@
-import 'package:field_2_fork/views/homeScreen.dart';
-import 'package:field_2_fork/views/phoneAuthentication.dart';
+import 'package:field_2_fork/views/entry/homescreen.dart';
+import 'package:field_2_fork/views/entry/phoneAuthentication.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

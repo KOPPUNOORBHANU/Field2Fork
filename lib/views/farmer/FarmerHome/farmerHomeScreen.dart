@@ -1,7 +1,12 @@
 import 'package:field_2_fork/consts/consts.dart';
 import 'package:field_2_fork/controllers/farmerHomeController.dart';
+import 'package:field_2_fork/views/farmer/FarmerAccount/FarmerAccountScreen.dart';
+import 'package:field_2_fork/views/farmer/FarmerAddProduct/fameraddproduct.dart';
+import 'package:field_2_fork/views/farmer/FarmerMyProducts/farmermyproducts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'farmerhome.dart';
 
 class FarmerHomeScreen extends StatefulWidget {
   const FarmerHomeScreen({super.key});
@@ -24,16 +29,16 @@ class _FarmerHomeScreenState extends State<FarmerHomeScreen> {
           label: home),
       BottomNavigationBarItem(
           icon: Image.asset(
-            icCategories,
+            icShop,
             width: 26,
           ),
-          label: categories),
+          label: myproducts),
       BottomNavigationBarItem(
           icon: Image.asset(
-            icCart,
+            icPlus,
             width: 26,
           ),
-          label: cart),
+          label: addproducts),
       BottomNavigationBarItem(
           icon: Image.asset(
             icProfile,
@@ -43,10 +48,10 @@ class _FarmerHomeScreenState extends State<FarmerHomeScreen> {
     ];
 
     var navbody = [
-      Container(color: Colors.amber),
-      Container(color: Colors.purple),
-      Container(color: Colors.blue),
-      Container(color: Colors.cyan)
+      const FarmerHome(),
+      const FarmerMyProductsScreen(),
+      const FarmerAddProductScreen(),
+      const FarmerAccountScreen()
     ];
     return Scaffold(
       body: Column(

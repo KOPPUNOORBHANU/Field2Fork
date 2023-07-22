@@ -1,10 +1,10 @@
+import 'package:field_2_fork/views/farmer/Login_and_SignUp/farmerLoginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-import '../../services/farmerSignupService.dart';
-import 'farmerLoginScreen.dart';
+import '../../../services/farmerSignupService.dart';
 
 class FarmerSignUpScreen extends StatefulWidget {
   const FarmerSignUpScreen({super.key});
@@ -140,7 +140,7 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
               ),
               GestureDetector(
                 onTap: () {
-                  Get.to(()=>FarmerLoginScreen());
+                  Get.to(() => FarmerLoginScreen());
                 },
                 child: Container(
                   child: const Card(

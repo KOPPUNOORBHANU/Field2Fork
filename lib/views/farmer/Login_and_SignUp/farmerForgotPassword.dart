@@ -1,7 +1,6 @@
-import 'package:field_2_fork/views/farmer/farmerLoginScreen.dart';
+import 'package:field_2_fork/views/farmer/Login_and_SignUp/farmerLoginScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
