@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:field_2_fork/consts/consts.dart';
 import 'package:field_2_fork/consts/lists.dart';
 import 'package:field_2_fork/widgets_common/categoriesWidget.dart';
+import 'package:field_2_fork/widgets_common/itemsWidget.dart';
+import 'package:field_2_fork/widgets_common/popularWidget.dart';
 import 'package:flutter/material.dart';
 
 class ConsumerHomeScreen extends StatelessWidget {
@@ -12,7 +14,7 @@ class ConsumerHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: lightGrey,
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(10),
       width: context.screenWidth,
       height: context.screenHeight,
       child: SafeArea(
@@ -84,6 +86,8 @@ class ConsumerHomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CategoriesWidget(),
+                PopularWidget(),
+                ItemsWidget(),
               ],
             ),
           )

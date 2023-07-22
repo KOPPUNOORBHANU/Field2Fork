@@ -1,20 +1,21 @@
-import 'package:field_2_fork/consts/consts.dart';
 import 'package:flutter/material.dart';
 
-class CategoriesWidget extends StatelessWidget {
-  const CategoriesWidget({super.key});
+import '../consts/colors.dart';
+
+class PopularWidget extends StatelessWidget {
+  const PopularWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         const Padding(
-          padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+          padding: EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 8),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Category",
+                "Popular",
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
@@ -37,11 +38,11 @@ class CategoriesWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              for (int i = 1; i < 8; i++)
+              for (int i = 8; i > 0; i--)
                 Container(
                   margin:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                  height: 50,
+                  height: 100,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: whiteColor,
@@ -64,7 +65,7 @@ class CategoriesWidget extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(right: 5),
                         child: Text(
-                          "Fruits",
+                          "Organic",
                           style: TextStyle(
                               fontFamily: 'Acme',
                               fontSize: 16,
