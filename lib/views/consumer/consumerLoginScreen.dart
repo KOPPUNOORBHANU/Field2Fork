@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'package:field_2_fork/views/consumer/consumerForgotPassword.dart';
-import 'package:field_2_fork/views/consumer/consumerHomeScreen.dart';
+import 'package:field_2_fork/views/consumer/consumerHome.dart';
 import 'package:field_2_fork/views/consumer/consumerSignUpScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 //import 'package:firebase_core/firebase_core.dart';
@@ -90,7 +90,7 @@ class _ConsumerLoginScreenState extends State<ConsumerLoginScreen> {
                                 email: email, password: password))
                         .user;
                     if (firebaseUser != null) {
-                      Get.to(() => const ConsumerHomeScreen());
+                      Get.to(() => const ConsumerHome());
                     } else {
                       // ignore: avoid_print
                       print("Incorrect email or password!!");
