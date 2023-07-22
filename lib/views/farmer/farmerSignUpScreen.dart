@@ -26,8 +26,8 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Farmer SignUp Screen"),
-        titleTextStyle: TextStyle(color: Colors.white, fontSize: 25.0),
+        title: const Text("Farmer SignUp Screen"),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 25.0),
         backgroundColor: Colors.green[400],
         // actions: [
         //   Icon(Icons.more_vert),
@@ -35,11 +35,11 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 10),
           child: Column(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(50.0),
                     bottomRight: Radius.circular(50.0)),
                 child: Container(
@@ -48,56 +48,56 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                   child: SvgPicture.asset("assets/images/farmer.svg"),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: TextFormField(
                   controller: farmerUserNameController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.person),
                     hintText: "User Name",
                     enabledBorder: OutlineInputBorder(),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: TextFormField(
                   controller: farmerPhoneController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.phone),
                     hintText: "Phone",
                     enabledBorder: OutlineInputBorder(),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: TextFormField(
                   controller: farmerEmailController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.email),
                     hintText: "Email",
                     enabledBorder: OutlineInputBorder(),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 30.0),
+                margin: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: TextFormField(
                   controller: farmerPasswordController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.password),
                     suffix: Icon(Icons.visibility),
                     hintText: "Password",
@@ -105,7 +105,7 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               ElevatedButton(
@@ -124,7 +124,8 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                                 farmerEmail, farmerPassword),
                           });
                 },
-                child: Text(
+                // ignore: sort_child_properties_last
+                child: const Text(
                   "Sign Up",
                   style: TextStyle(
                       color: Colors.white,
@@ -134,7 +135,7 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green[400]),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10.0,
               ),
               GestureDetector(
@@ -142,7 +143,7 @@ class _FarmerSignUpScreenState extends State<FarmerSignUpScreen> {
                   Get.to(()=>FarmerLoginScreen());
                 },
                 child: Container(
-                  child: Card(
+                  child: const Card(
                     child: Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Text("Already Have an Account? LogIn")),

@@ -21,17 +21,17 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             GestureDetector(
               onTap: () {
-                Get.to(() => FarmerSignUpScreen());
+                Get.to(() => const FarmerSignUpScreen());
               },
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 100.0),
+                  padding: const EdgeInsets.only(top: 100.0),
                   child: Card(
                     child: Column(
                       children: [
                         Container(
                           child: Padding(
-                            padding: EdgeInsets.only(bottom: 10),
+                            padding: const EdgeInsets.only(bottom: 10),
                             child: SvgPicture.asset(
                               'assets/images/farmersignup.svg',
                               width: 150,
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Farmer',
                           style: TextStyle(
                             fontSize: 30,
@@ -52,30 +52,30 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             GestureDetector(
               onTap: () {
-                Get.to(() => ConsumerSignUpScreen());
+                Get.to(() => const ConsumerSignUpScreen());
               },
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 50.0),
+                  padding: const EdgeInsets.only(top: 50.0),
                   child: Card(
                     child: Column(
                       children: [
                         Container(
                           child: Padding(
-                            padding: EdgeInsets.only(bottom: 10),
+                            padding: const EdgeInsets.only(bottom: 10),
                             child: SvgPicture.asset(
                               'assets/images/consumer.svg',
-                              width: 300,
+                              width: 200,
                               height: 250,
                             ),
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Consumer',
                           style: TextStyle(
                             fontSize: 30,
