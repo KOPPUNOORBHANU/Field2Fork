@@ -46,6 +46,7 @@ dependencies:
   cloud_firestore: ^4.8.3
   quickalert: ^1.0.1
   velocity_x: ^4.1.0
+  card_swiper: ^3.0.1
 
 
 dev_dependencies:
@@ -101,6 +102,10 @@ flutter:
     - family: sans_bold
       fonts:
         - asset: assets/fonts/sans_bold.ttf
+
+    - family: Acme
+      fonts:
+        - asset: assets/fonts/Acme-Regular.ttf
        
   #         style: italic
   #   - family: Trajan Pro
